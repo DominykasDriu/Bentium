@@ -1,0 +1,39 @@
+.carousel {
+    width: 100%;
+    margin: 50px;
+}
+.carousel-cell {
+    width: 33%; /* full width */
+    height: 600px; /* height of carousel */
+    margin-right: 10px;
+}
+.carousel-cell>* {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+.carousel-cell>*:hover {
+    filter: grayscale(0%);
+}
+.product {
+    background-image: url("https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.woody {
+    background-image: url("https://images.pexels.com/photos/3750777/pexels-photo-3750777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.interior {
+    background-image: url("https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.pallete {
+    background-image: url("https://images.pexels.com/photos/5933/color-paint-palette-wall-painting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.carousel-cell>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    font-size: 3em;
+    font-weight: bold;
+}

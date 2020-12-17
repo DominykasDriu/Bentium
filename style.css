@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap');
+
+:root {
+    --red:#E9204F;
+    --black: #000000;
+    --grey: #ebebeb;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+/* VARS */
+.container {
+    width: 65vw;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn {
+    border: 2px solid var(--red);
+    color: var(--black);
+}
+.btn:hover {
+    background-color: var(--red);
+    color: white;
+}
+.white-bg {
+    background-color: white;
+}
+.red-bg {
+    background-color: var(--red);
+}
+.divider-horizontal {
+    height: 2px;
+    width: 20%;
+}
+.divider-portrait {
+    height: 40px;
+    width: 2px;
+    margin: 0 auto;
+}
+.section-name {
+    font-size: 2em;
+}
+.section-name-red {
+    color: var(--red);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.5em;
+    font-weight: bold;
+}
+section {
+    margin-top: 90px;
+}
+.material-icons {
+    font-size: 3em !important;
+    margin-left: -5px !important;
+}
+h4 {
+    font-size: 1.2em;
+}
+/* HEADER */
+header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto 0 auto;
+}
+.logo {
+    font-weight: 700;
+    font-size: 2em;
+}
+nav>a {
+    font-weight: 700;
+    color: var(--black);
+    margin: 0 10px;
+}
+nav>a:hover {
+    border-bottom: 4px solid var(--red);
+}
+/* HERO */
+.hero {
+    background-image: url("https://www.desktopbackground.org/download/o/2013/04/05/555906_pink-singer-earrings-grayscale-white-backgrounds-wallpapers_1024x768_h.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+}
+.hero-slogan{
+    padding: 50px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero-slogan>h1 {
+    font-size: 5em;
+    line-height: 1em;
+    margin: 80px 0;
+}
+.hero-slogan>.btn{
+    width: 30%;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+}
+/* HERO CARDS */
+.hero-cards {
+    display: flex;
+    justify-content: space-between;
+}
+.hero-card {
+    width: 31%;
+    height: 400px;
+    background-color: white;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.2);
+    color: black;
+    transition: 0.3s ease-in;
+}
+.hero-card>* {
+    margin: 5px 0;
+}
+.hero-card:hover {
+    background-color: var(--red);
+    color: white;
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.541);
+}
+/* SERVICES */
+.service-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    margin-top: 50px;
+}
+.service-card {
+    width: 31%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.service-card:hover {
+    color: white;
+    background-color: var(--red);
+}
+/* WORKS */
+section.works>div.section-name{
+    display: flex;
+    justify-content: space-between;
+}
+section.works>div.section-name>.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    width: 130px;
+    height: 50px;
+    font-weight: bold;
+}
+.product {
+    background-image: url("https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.woody {
+    background-image: url("https://images.pexels.com/photos/3750777/pexels-photo-3750777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.interior {
+    background-image: url("https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+/* ABOUT */
+.about-galery {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.teamwork {
+    background-image: url("https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    width: 59%;
+    height: 100%;
+    background-size: cover;
+}
+.about-right {
+    width: 39%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.philosophy {
+    background-image: url("https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    height: 48%;
+    background-size: cover;
+}
+.office {
+    background-image: url("https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    height: 48%;
+    background-size: cover;
+}
+.about-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.2);
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+.about-img:hover {
+    filter: grayscale(0);
+}
+.about-text-container {
+    display: flex;
+    margin-bottom: 50px;
+}
+.about-text-container>div {
+    padding: 0 70px 0 0;
+}
+.about-text-container>div>h4 {
+    margin-bottom: 40px;
+}
+.about-text-container>div>p {
+    color: grey;
+}
+/* FOOTER */
+.footer-hero {
+    background-color:#1B1B1B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 140px 20px;
+}
+.social {
+    display: flex;
+}
+.social>div {
+    color: white;
+    border: var(--red) solid 2px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+.social>div:hover {
+    color: var(--red);
+}
+.footer-hero>h2 {
+    color: white;
+    font-size: 3em;
+}
+.footer-hero>.btn {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    font-weight: bold;
+}
+.footer-address {
+    background-color: #161616;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.footer-address>div:hover {
+    color: var(--red);
+}
+.footer-copyrights {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 30px 0;
+}
+.footer-copyrights>div>span {
+    font-weight: lighter;
+    padding: 0 10px;
+}
+.footer-copyrights>div>a {
+    color: white;
+    padding: 0 10px;
+}
